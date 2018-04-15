@@ -1,0 +1,43 @@
+%----------------------------------------------------------------------------------------
+%       DEFINITION OF EXPERIMENTS
+%----------------------------------------------------------------------------------------
+
+\newexperiment{example}{This is an example experiment}
+\newexperiment{example2}{This is another example experiment}
+\newexperiment{example3}{This is yet another example experiment}
+\newexperiment{table}{This shows a sample table}
+%\newexperiment{shorthand}{Description of the experiment}
+%----------------------------------------------------------------------------------------
+
+%	LAB BOOK CONTENTS
+%----------------------------------------------------------------------------------------
+
+% Blank template to use for new days:
+
+%\labday{Day, Date Month Year}
+
+%\experiment{}
+
+%Text
+
+%-----------------------------------------
+
+%\experiment{}
+
+%Text
+
+%----------------------------------------------------------------------------------------
+
+\labday{Friday, 18 March 2018}
+
+\experiment{example}
+
+Text
+
+% -----------------------------------------
+
+\experiment{example2}
+
+Text
+
+% ----------------------------------------------------------------------------------------
