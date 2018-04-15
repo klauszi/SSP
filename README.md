@@ -1,2 +1,2 @@
 # SSP
-Übung
+Übungen zu Speech Signal Processing
