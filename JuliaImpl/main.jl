@@ -1,0 +1,11 @@
+include("SSV.jl")
+using DSP
+laurel=SSV.loadAudio("../Audio/speech1.wav")
+include("sheet1.jl")
+flaurel = Sheet1.my_windowing(laurel)
+include("sheet2.jl")
+window = n -> sqrt.(Windows.kaiser(n,2))
+slaurel = Sheet2.my_stft(Sheet2.apply_window(flaurel, window))
+slaurel = Sheet2.apply_filter(slaurel, n -> map(i -> i > n/10 && i < n/3 ? 1.0 : 0.0, 1:n))
+flaurel2 = Sheet2.my_inverse_stft(slaurel)
+laurel2 = Sheet2.my_inverse_windowing(Sheet2.apply_window(flaurel2, window))
